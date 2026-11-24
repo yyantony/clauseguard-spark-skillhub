@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#f8fafc" rx="12"/>
+  <rect x="24" y="20" width="912" height="58" fill="#0f172a" rx="8"/>
+  <text x="44" y="55" fill="#ffffff" font-family="monospace, sans-serif" font-size="20" font-weight="bold">ClauseGuard · Spark-X2.6-4B × SkillHub Illustrated Walkthrough (4/4 Audit PASS)</text>
+
+  <!-- Step 1: Raw Input -->
+  <rect x="24" y="96" width="440" height="195" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+  <text x="40" y="124" fill="#1e293b" font-family="monospace" font-size="15" font-weight="bold">1. Sample Input (Release Notes + Meeting Sync)</text>
+  <text x="40" y="152" fill="#334155" font-family="monospace" font-size="12">L1: [BREAKING] X-Auth-Token removed; migrate by 2026-12-05</text>
+  <text x="40" y="176" fill="#334155" font-family="monospace" font-size="12">L2: Burst capacity changed: 500 req/s -&gt; 200 req/s</text>
+  <text x="40" y="200" fill="#b45309" font-family="monospace" font-size="12" font-weight="bold">L3: Discuss Q4 GPU budget next week (No owner assigned)</text>
+  <text x="40" y="224" fill="#334155" font-family="monospace" font-size="12">L4: @chenwei benchmark Redis cache &lt; 80ms by 2026-11-28</text>
+  <text x="40" y="262" fill="#64748b" font-family="monospace" font-size="11">SkillHub Document Skill: SHA-256 Span Anchoring enabled</text>
+
+  <!-- Step 2: Local Spark-X2.6-4B Inference -->
+  <rect x="496" y="96" width="440" height="195" fill="#ffffff" stroke="#3b82f6" stroke-width="2" rx="8"/>
+  <text x="512" y="124" fill="#1d4ed8" font-family="monospace" font-size="15" font-weight="bold">2. Local Spark-X2.6-4B Structured Step Output</text>
+  <text x="512" y="152" fill="#334155" font-family="monospace" font-size="12">REL-2026-11-L1 | breaking_upgrade | deadline: 2026-12-05</text>
+  <text x="512" y="176" fill="#334155" font-family="monospace" font-size="12">REL-2026-11-L2 | config_change    | [500 req/s, 200 req/s]</text>
+  <text x="512" y="200" fill="#047857" font-family="monospace" font-size="12" font-weight="bold">REL-2026-11-L3 | owner: UNASSIGNED (Uncertainty Kept!)</text>
+  <text x="512" y="224" fill="#334155" font-family="monospace" font-size="12">REL-2026-11-L4 | action_item      | owner: @chenwei (80ms)</text>
+  <text x="512" y="262" fill="#1d4ed8" font-family="monospace" font-size="11">Model: XHToken/Spark-X2.6-4B | Zero invented owners</text>
+
+  <!-- Step 3: Verification Audit Output -->
+  <rect x="24" y="310" width="912" height="206" fill="#0f172a" rx="8"/>
+  <text x="44" y="342" fill="#38bdf8" font-family="monospace" font-size="15" font-weight="bold">3. Deterministic Verification Audit Terminal Output (python3 spark_skill_verifier.py)</text>
+  <text x="44" y="372" fill="#a7f3d0" font-family="monospace" font-size="13">$ python3 spark_skill_verifier.py</text>
+  <text x="44" y="398" fill="#ffffff" font-family="monospace" font-size="13">Audit Passed: True (4/4 items verified). Saved to sample_run_output.json</text>
+  <text x="44" y="426" fill="#94a3b8" font-family="monospace" font-size="12">[PASS] REL-2026-11-L1 (sha256:8166b2009b) | quote_exact_match=True | numeric_unit_match=True | no_invented_owner=True</text>
+  <text x="44" y="448" fill="#94a3b8" font-family="monospace" font-size="12">[PASS] REL-2026-11-L2 (sha256:9f02a31b46) | quote_exact_match=True | numeric_unit_match=True | no_invented_owner=True</text>
+  <text x="44" y="470" fill="#fde047" font-family="monospace" font-size="12">[PASS] REL-2026-11-L3 (sha256:76be9c8611) | uncertainty_preserved=True | owner="UNASSIGNED (Preserved Uncertainty)"</text>
+  <text x="44" y="492" fill="#94a3b8" font-family="monospace" font-size="12">[PASS] REL-2026-11-L4 (sha256:3ad4a2b346) | quote_exact_match=True | owner="@chenwei" | metric="80ms" | deadline="2026-11-28"</text>
+</svg>
