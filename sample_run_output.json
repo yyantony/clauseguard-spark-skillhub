@@ -1,0 +1,100 @@
+{
+  "benchmark_timestamp": "2026-11-24T05:58:23Z",
+  "model_step": "Spark-X2.6-4B (Local Structured Extraction & Uncertainty Guard)",
+  "document_id": "REL-2026-11",
+  "extracted_checklist": [
+    {
+      "item_id": "REL-2026-11-L1",
+      "source_line": 1,
+      "source_quote": "1. [BREAKING] The legacy header `X-Auth-Token` is removed in v2.8.0; all clients must migrate to `Authorization: Bearer <jwt>` before 2026-12-05.",
+      "evidence_sha256_10": "613dd4e318",
+      "category": "breaking_upgrade",
+      "owner": "UNASSIGNED (Preserved Uncertainty)",
+      "owner_verified_in_source": false,
+      "uncertainty_preserved": false,
+      "deadlines": [
+        "2026-12-05"
+      ],
+      "numeric_values": []
+    },
+    {
+      "item_id": "REL-2026-11-L2",
+      "source_line": 2,
+      "source_quote": "2. Rate limiter default burst capacity changed from 500 req/s to 200 req/s (`config.rate_limit.burst`).",
+      "evidence_sha256_10": "6a0c8db9fd",
+      "category": "config_change",
+      "owner": "UNASSIGNED (Preserved Uncertainty)",
+      "owner_verified_in_source": false,
+      "uncertainty_preserved": false,
+      "deadlines": [],
+      "numeric_values": [
+        "500 req/s",
+        "200 req/s"
+      ]
+    },
+    {
+      "item_id": "REL-2026-11-L3",
+      "source_line": 3,
+      "source_quote": "3. Meeting Note (2026-11-24): Discuss Q4 cloud GPU budget allocation next week. (No owner assigned yet).",
+      "evidence_sha256_10": "e2ae911379",
+      "category": "action_item",
+      "owner": "UNASSIGNED (Preserved Uncertainty)",
+      "owner_verified_in_source": false,
+      "uncertainty_preserved": true,
+      "deadlines": [
+        "2026-11-24"
+      ],
+      "numeric_values": []
+    },
+    {
+      "item_id": "REL-2026-11-L4",
+      "source_line": 4,
+      "source_quote": "4. Action Item: @chenwei will benchmark the Redis vector cache p99 latency (< 80ms target) by 2026-11-28.",
+      "evidence_sha256_10": "55a27d1bbf",
+      "category": "action_item",
+      "owner": "@chenwei",
+      "owner_verified_in_source": true,
+      "uncertainty_preserved": false,
+      "deadlines": [
+        "2026-11-28"
+      ],
+      "numeric_values": [
+        "80ms"
+      ]
+    }
+  ],
+  "verification_audit": {
+    "all_passed": true,
+    "total_items": 4,
+    "item_audits": [
+      {
+        "item_id": "REL-2026-11-L1",
+        "quote_exact_match": true,
+        "numeric_unit_match": true,
+        "no_invented_owner": true,
+        "status": "PASS"
+      },
+      {
+        "item_id": "REL-2026-11-L2",
+        "quote_exact_match": true,
+        "numeric_unit_match": true,
+        "no_invented_owner": true,
+        "status": "PASS"
+      },
+      {
+        "item_id": "REL-2026-11-L3",
+        "quote_exact_match": true,
+        "numeric_unit_match": true,
+        "no_invented_owner": true,
+        "status": "PASS"
+      },
+      {
+        "item_id": "REL-2026-11-L4",
+        "quote_exact_match": true,
+        "numeric_unit_match": true,
+        "no_invented_owner": true,
+        "status": "PASS"
+      }
+    ]
+  }
+}
